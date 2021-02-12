@@ -1,0 +1,116 @@
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ddd;
+}
+
+.greška{
+    background-color: red;
+}
+
+.dobro{
+    background-color: green;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#google_translate_element{
+    float: right;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background: #4CAF50;
+}
+
+tr:nth-child(odd)		{ background-color:#eee; }
+tr:nth-child(even)		{ background-color:#fff; }
+
+#poveznica{
+    font-family: arial, verdana;
+    font-size: 12px;
+    border:1px #000000 solid;
+    padding: 6px;
+    margin: 3px;
+    background-color: #cccccc;
+    text-decoration: none;
+}
+
+#poveznica2{
+    font-family: arial, verdana;
+    font-size: 12px;
+    border:1px #000000 solid;
+    color: green;
+    background-color: #cccccc;
+    padding: 6px;
+    margin: 3px;
+    text-decoration: none;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.desno{
+    float: right;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.desno2{
+    float: right;
+    padding-left: 570px;
+}
+
+h2{
+    text-align: center;
+}
+
+.era{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}

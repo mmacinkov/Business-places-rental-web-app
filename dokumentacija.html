@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="hr">
+    <head>
+        <title>POSLOVNI PROSTOR</title>
+        <meta charset="utf-8">
+        <link href="css/mmacinkov.css" rel="stylesheet" type="text/css" >
+        <link href="css/mmacinkov_prilagodbe.css" rel="stylesheet" type="text/css" >
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
+
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="naslov" content="Početna stranica">
+        <meta name="datum promjene" content="30.05.2018.">
+        <meta name="autor" content="Marin Mačinković">
+    </head>
+    <body>
+        <header>
+            <div id="google_translate_element"><script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'hr'}, 'google_translate_element');
+                }
+            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
+            <h1>POSLOVNI PROSTOR
+            </h1>                     
+
+
+        </header>
+        <nav>
+
+            <ul>
+                <li><a href="pocetna.php" >Početna</a></li>
+                <li><a href="registracija.php" >Registracija</a></li>
+                <li><a href="prijava.php">Prijava</a></li>
+                <li><a href="o_autoru.html">O autoru</a></li>
+                <li><a href="dokumentacija.html">Dokumentacija</a></li>
+                <li><a href="odjava.php">Odjava</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2> OPIS PROJEKTNOG ZADATKA </h2>
+            <p>
+                Na kolegiju Web Dizajn i Programiranje upoznali smo se sa raznim jezicima i tehnologijama Web programiranja i dizajna. Počeli smo sa osnovama, HTML-om i CSS-om te preko JavaScripta, JQueerya, JSON i Ajaxa došli do PHP-a koji je po meni najvažniji za razvoj i pravljenje Web stranica. Kroz labose, predavanja i seminare upoznali smo sa svime od navedenih te smo kroz zadaće usavršili i isprakticirali svoje znanje.
+                U konačnici, došao je red na projekt. Moj zadatak je bio Poslovni prostor. Ukratko trebalo je kreirati stranicu koja će omogućiti rezervaciju termina u nekoj dvorani na nekoj lokaciji uz sve to prikazati razne oglase. Sve je realizirano uz pomoć MySQL baze podataka koja je dosta olakšala rad.
+            </p>
+            <h2>OPIS PROJEKTNOG RJEŠENJA</h2>
+            <p>
+              Projekt je realiziran uz pomoć već navedenih jezika. Najviše sam koristio PHP i MySQL u kojima je realizirana većina projekta. Još sam koristio JavaScript, JQuerry i AJAX ponajviše za prijavu i regstraciju kod provjere podataka te za brojanje klikova na oglase. Za dizajn sam koristio CSS, jedan za prijavu i registraciju te jedan za ostale stranice. Korisničke uloge i dohvat istih prilikom prijave realizirao sam pomoću sesija te sam za svaku ulogu koja je superiorna u odnosu na drugu jednostavno uključio sadržaj uloge ispod u ulogu iznad.
+              Nisam koristio nikakva tuđa rješenja ili gotove kodove, sve sam napravio sam.
+            </p>
+            <h2>ERA MODEL</h2>
+            <p>
+                <b>ERA</b> model metoda konceptualnog i fizičkog modeliranja podataka koja se u projektima koristi da bi po logičkim konceptima i kreacijama olakšala posao korisniku. Ja sam eru koristio da bi pravilno povezao podatke u bazi odakleih je kasnije bilo jednostavno dohvatiti. ERA se sastoji od tablica, atributa te veza među tablicama. Moja era se sastoji od petnaest tablica od kojih su četiri nastale kao plod veze više više između dvije tablice. Tablica dnevnik rada nije povezana ni s jednom drugom jer se u nju zapisuju podaci o cjelokupnom radu sustava, a korisnika u istoj sam dohvaćao preko sesije. Primjer veze, objašnjenje - lokacija - dvorana. Na jednoj lokaciji može biti više dvorana, ali jedna jedna jedinstvena dvorana može biti na samo jednoj lokaciji. To bi bio primjer veze u tablicama. Ispod je slika ERA modela koja se može uvećati klikom na istu.
+            </p>
+            <a href="multimedija/era.png"> <img class="era" src="multimedija/era.png" alt="era" width="500" height="500"></a>
+          
+            
+            <h2>NAVIGACIJSKI DIJAGRAM</h2>
+            <p>
+                <b>Navigacijski dijagram</b> je dijagram koji nam olakšava razumijevanje projekta i podjelu po ulogama. U mom projektu koristio sam ga da bi definirao što koji korisnik na stranici može raditi što mi je kasnije olakšalo programiranje. Svaki korisnik koji je superioran u odnosu na drugog vidi sve što i on. Dakle, registrirani korisnik vidi što i neregistrirani, moderator vidi što i registrirani i neregistrirani te administrator vidi sve što i neregistrirani, registrirani i moderator. Ispod je slika mog navigacijskog dijagrama koja se može uvećati klikom na istu.
+            </p>
+            <a href="multimedija/navigacijski.png"> <img class="era" src="multimedija/navigacijski.png" alt="nav" width="500" height="500"></a>
+           
+            
+            <h2>POPIS SKRIPATA, MAPA MJESTA</h2>
+            <p>
+                U nastavku ću navesti sve stranice koje sam kreirao prilikom ovog projekta koristeći NetBeans: <br>
+                <b>css</b> - folder za dizajn<br>
+                <b>mmacinkov.css</b> - stranica koju sam koristio za dizajnirati prijavu i registraciju <br>
+                <b>mmacinkov2.css</b> - stranica koju sam koristio za dizajnirati ostale stranice <br>
+                <br>
+                <b>js</b> - folder za JS <br>
+                <b>mmacinkov.js</b> - stranica koju sam koristio za razne provjere autentikacije prilikom prijave i registracije <br>
+                <b>mmacinkov_jquerry.js</b> - stranica koju sam koristio za razne provjere autentikacije prilikom prijave i registracije <br>            
+                <br>
+                <b>multimedija</b> - folder sa slikama <br>
+                <br>
+                <b>administrator.php</b> - stranica koja omogućuje pristup samo administratorima, sadrži sve ono što pojedini administrator može raditi, a vidi se u navigacijskom dijagramu <br>
+                <b>aktivacijaEmaila.php</b> - stranica koja služi za aktivaciju emaila, nakon što se korisnik registrira, šalje mu se email da potvrdi svoj račun klikom na link nakon čega se može prijavati<br>
+                <b>baza.class.php</b> - stranica koja omogućuje razmjenu podataka s bazom, na svaku stranicu se ukljući uz pomoć require naredbe <br>
+                <b>brojacKlikova.php</b> - stranica koja se koristi prilikom brojanja klikova na oglas, realizirana uz pomoć AJAX-a na njoj se uz pomoć GET metode dohvaća ID oglasa koji je kliknut te uvećava broj klikova <br>
+                <b>dokumentacija.html</b> - stranica koja prikazuje sve korišteno u ovom projektu<br>
+                <b>izlistajDvorane.php</b> - stranica koja omogućuje izlistavanje dvorana svake pojedine lokacije nakon klika na naziv određene lokacije <br>
+                <b>izlistajPovratneInformacije.php</b> - stranica koja omogućuje izlistavanje svih povratnih informacija za svaku pojedinu dvoranu nakon klika na određenu dvoranu <br>
+                <b>moderator.php</b> - stranica koja omogućuje pristup samo moderatorima, sadrži sve ono što pojedini moderator može raditi, a vidi se u navigacijskom dijagramu <br>
+                <b>neregistriraniKorisnik.php</b> - stranica koja omogućuje pristup samo neregistrirani korisnicima, sadrži sve ono što neregistrirani korisnik može raditi, a vidi se u navigacijskom dijagramu <br>
+                <b>o_autoru.html</b> - stranica koja prikazuje pojedinosti o meni, autoru ove stranice <br>
+                <b>odjava.php</b> - stranica koja određuje što se događa kada se korisnik odjavi odnosno brisanje sesije <br>
+                <b>pocetna.php</b> - stranica koja služi za preusmjeravanje korisnika dohvatom uloge svakog <br>
+                <b>prijava.php</b> - stranica koja omogućuje korisniku koji je aktivan prijavu u sustav unošenjem korisničkog imena i lozinke <br>
+                <b>provjeraKorime.php</b> - stranica koja služi za provjeru postoji li određeno korisničko ime u bazi prilikom registracije, realizirana uz pomoć AJAX-a<br>
+                <b>registracija.php</b> - stranica koja omogućuje registraciju korisnika u sustav unošenjem osobnih podataka<br>
+                <b>registriraniKorisnik.php</b> - stranica koja omogućuje pristup samo registrirani korisnicima, sadrži sve ono što registrirani korisnik može raditi, a vidi se u navigacijskom dijagramu <br>
+                    <b>zaboraviliSteLozinku.php</b> - stranica koja omogućuje korisniku slanje nove lozinke ako je staru zaboravio, jednostavnim unošenjem maila na koji će dobiti istu <br>
+                
+                
+                
+            </p>
+            <h2>POPIS KORIŠTENIH TEHNOLOGIJA I ALATA</h2>
+            <p>
+                <b>FileZilla</b> - besplatni softver, cross-platforma FTP aplikacija, koja se sastoji od FileZilla Client i FileZilla Server. Binarni programi klijenta dostupni su za Windows, Linux i MacOS, a binarni programi poslužitelja dostupni su samo za Windowse. Klijent podržava FTP, SFTP i FTPS (FTP preko SSL/TLS).<br>
+                <b>NetBeans IDE 8.2</b> - razvoj okruženje IDE za Javu. Služi za razvijanje raznih programa, a kompatibilan je sa većinom programskih jezika koji su potrebni za razvoj i kreiranje aplikacije:  PHP, C, C++, HTML5, Javadoc i Javascript. Podržavaju ga  Microsoft Windows, macOS, Linux i Solaris. <br>
+                    <b>PHPMYAdmin</b> - besplatan open source alat za administraciju i korištenje MySQL baze podataka prilikom kreiranja aplikacija za korištenje u istoj. Ova prenosiva web aplikacija pisana je prvenstveno u PHP-u, a s vremenom postala je jedan od najpopularnijih MySQL alata za administraciju, posebno za web hosting usluge. <br>
+                <b>PuTTy</b> - besplatni open-source emulator terminala, serijska konzola i aplikacija za prijenos mrežnih datoteka koja se koristi ponajviše za određivanje vidljivosti podataka, pisanje u određene foldere i slično. Podržava nekoliko mrežnih protokola, uključujući SCP, SSH, Telnet, rlogin, i osnovnu socket vezu. <br>
+                <b>MySQLWorkbench</b> - koristio sam ga za izradu ERA modela. vizualni alat za dizajn baze podataka koji integrira SQL razvoj, administraciju, dizajn baze, stvaranje i održavanje u jedinstveno integrirano razvojno okruženje za MySQL bazu podataka. Naslijedio je DBDesigner 4 iz fabFORCE.net, i zamjenjuje prethodni paket softvera, MySQL GUI Tools Bundle.<br>
+                
+            </p>
+            <h2>POPIS VANJSKIH MODULA</h2>
+            <p>
+                <b>Google API</b> - skup API sučelja za programiranje koji omogućuju komunikaciju s Google uslugama i njihovu integraciju na druge usluge. Primjeri ovih uključuju Pretraživanje, Gmail, Prijevod ili Google karte. Aplikacije trećih strana mogu upotrebljavati ove API-jeve kako bi iskoristile ili proširile funkcionalnost postojećih usluga. API-ji pružaju funkcije kao što su analitika, strojno učenje kao usluga (API predviđanja) ili pristup korisničkim podacima (kada se daje dopuštenje za čitanje podataka). U svom projektu sam ga koristio za prevođenje stranica i kreiranje reCaptcha.
+            </p>
+        </section>
+
+        <footer>
+            <p> &copy; 24 M.Mačinković</p>
+        </footer>
+
+
+        <script src="js/mmacinkov.js" type="text/javascript"></script>
+        <script src="js/mmacinkov_jquerry.js" type="text/javascript"></script>
+    </body>
+</html>
